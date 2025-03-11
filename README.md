@@ -75,7 +75,6 @@ cd PhoneBookSystemFront
 npm install
 ng serve
 
-The app will be available at: http://localhost:4200
 
 📷 Screenshots
 
