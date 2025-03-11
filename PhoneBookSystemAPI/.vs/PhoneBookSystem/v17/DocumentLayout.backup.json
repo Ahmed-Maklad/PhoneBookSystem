@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65AF4078-00CC-4CC9-888C-C3E2071520B3}|PhoneBookSystem\\PhoneBookSystem.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebooksystem\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65AF4078-00CC-4CC9-888C-C3E2071520B3}|PhoneBookSystem\\PhoneBookSystem.csproj|solutionrelative:phonebooksystem\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218AE74D-7BA2-4BD1-B5E7-7FA837CE0075}|PhoneBook.Application\\PhoneBook.Application.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebook.application\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218AE74D-7BA2-4BD1-B5E7-7FA837CE0075}|PhoneBook.Application\\PhoneBook.Application.csproj|solutionrelative:phonebook.application\\service\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D972AE79-3F77-428D-924F-E4892335CF1B}|PhoneBook.Infrastructure\\PhoneBook.Infrastructure.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebook.infrastructure\\repository\\genericrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D972AE79-3F77-428D-924F-E4892335CF1B}|PhoneBook.Infrastructure\\PhoneBook.Infrastructure.csproj|solutionrelative:phonebook.infrastructure\\repository\\genericrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65AF4078-00CC-4CC9-888C-C3E2071520B3}|PhoneBookSystem\\PhoneBookSystem.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebooksystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65AF4078-00CC-4CC9-888C-C3E2071520B3}|PhoneBookSystem\\PhoneBookSystem.csproj|solutionrelative:phonebooksystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218AE74D-7BA2-4BD1-B5E7-7FA837CE0075}|PhoneBook.Application\\PhoneBook.Application.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebook.application\\mapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218AE74D-7BA2-4BD1-B5E7-7FA837CE0075}|PhoneBook.Application\\PhoneBook.Application.csproj|solutionrelative:phonebook.application\\mapper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D972AE79-3F77-428D-924F-E4892335CF1B}|PhoneBook.Infrastructure\\PhoneBook.Infrastructure.csproj|e:\\asp.net\\phonebooksystem\\phonebooksystemapi\\phonebook.infrastructure\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D972AE79-3F77-428D-924F-E4892335CF1B}|PhoneBook.Infrastructure\\PhoneBook.Infrastructure.csproj|solutionrelative:phonebook.infrastructure\\repository\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBookSystem\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "PhoneBookSystem\\Controllers\\ContactController.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBookSystem\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "PhoneBookSystem\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T01:24:23.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactService.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Application\\Service\\ContactService.cs",
+              "RelativeDocumentMoniker": "PhoneBook.Application\\Service\\ContactService.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Application\\Service\\ContactService.cs",
+              "RelativeToolTip": "PhoneBook.Application\\Service\\ContactService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAgwFIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:56:02.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "PhoneBook.Infrastructure\\Repository\\GenericRepository.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Infrastructure\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "PhoneBook.Infrastructure\\Repository\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:47:30.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactRepository.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Infrastructure\\Repository\\ContactRepository.cs",
+              "RelativeDocumentMoniker": "PhoneBook.Infrastructure\\Repository\\ContactRepository.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Infrastructure\\Repository\\ContactRepository.cs",
+              "RelativeToolTip": "PhoneBook.Infrastructure\\Repository\\ContactRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:35:48.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBookSystem\\Program.cs",
+              "RelativeDocumentMoniker": "PhoneBookSystem\\Program.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBookSystem\\Program.cs",
+              "RelativeToolTip": "PhoneBookSystem\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:02:07.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Application\\Mapper\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "PhoneBook.Application\\Mapper\\MappingProfile.cs",
+              "ToolTip": "E:\\ASP.NET\\PhoneBookSystem\\PhoneBookSystemAPI\\PhoneBook.Application\\Mapper\\MappingProfile.cs",
+              "RelativeToolTip": "PhoneBook.Application\\Mapper\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T05:06:57.928Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

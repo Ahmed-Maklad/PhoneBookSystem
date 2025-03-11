@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PhoneBook.Application\\Contract",
+    "\\PhoneBook.Application\\Validator",
+    "\\PhoneBook.Infrastructure",
+    "\\PhoneBook.Infrastructure\\Repository",
+    "\\PhoneBookSystem"
+  ],
+  "SelectedNode": "\\PhoneBookSystem\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

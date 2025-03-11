@@ -1,0 +1,103 @@
+<div style="background-color:rgb(33, 37, 41); padding: 10px;">
+  <h3 style="font-weight: bolder; color: rgb(204, 109, 50); text-align: center;">Contact Page</h3>
+</div>
+
+<div class="search-container d-flex align-items-center justify-content-center mt-4">
+  <input type="text" [(ngModel)]="SearchQuery" class="form-control w-50 me-2 shadow-sm"
+    placeholder="Search Contacts . . !">
+  <button class="btn btn-primary shadow-sm px-4" (click)="searchForContact()">Search</button>
+  <button *ngIf="SearchQuery" class="btn btn-secondary shadow-sm ms-2" (click)="clearSearch()">Clear</button>
+</div>
+
+<div class="container mt-5">
+
+  <div class="d-flex align-items-center gap-3">
+    <button class="btn btn-primary" style="font-weight: 600;" (click)="openCreateForm()">Create Contact</button>
+    <div *ngIf="apiResponseContact.msg" class="alert alert-danger alert-dismissible fade show" role="alert">
+      {{ apiResponseContact.msg }}
+      <button type="button" class="btn-close" (click)="apiResponseContact.msg = ''"></button>
+    </div>
+
+    <div *ngIf="!apiResponsePaginatedContact.isSuccess" class="alert alert-danger alert-dismissible fade show"
+      role="alert">
+      {{ apiResponsePaginatedContact.msg || 'No contacts available.' }}
+      <button type="button" class="btn-close" (click)="apiResponsePaginatedContact.msg = ''"></button>
+    </div>
+
+  </div>
+
+  <div *ngIf="showForm" class="form-container card p-3 shadow mt-4">
+    <h3 class="mb-3 text-center">{{ isEditMode ? 'Update Contact' : '' }}</h3>
+    <div class="mb-3">
+      <label class="form-label" style="font-weight: 600;">Name</label>
+      <input type="text" [(ngModel)]="contact.name" name="name" placeholder="Enter Name" class="form-control" required
+        #nameInput="ngModel">
+
+      <!-- رسالة الخطأ عند ترك الاسم فارغًا -->
+      <div *ngIf="nameInput.invalid && nameInput.touched" style="min-height: 20px;">
+        <small class="text-danger">Name is required.</small>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-weight: 600;">Email</label>
+      <input type="email" [(ngModel)]="contact.email" name="email" placeholder="Enter Email" class="form-control"
+        required #emailInput="ngModel">
+
+      <!-- رسالة الخطأ عند ترك البريد الإلكتروني فارغًا أو إدخال تنسيق غير صحيح -->
+      <div *ngIf="emailInput.invalid && emailInput.touched" style="min-height: 20px;">
+        <small class="text-danger">Valid email is required.</small>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" style="font-weight: 600;">Phone</label>
+      <input type="text" [(ngModel)]="contact.phoneNumber" name="phoneNumber" placeholder="+1234567890"
+        class="form-control" pattern="^\+?[0-9]{10,15}$" title="Invalid phone number format." #phoneInput="ngModel"
+        required>
+
+      <!-- عرض رسالة الخطأ عند إدخال بيانات غير صحيحة -->
+      <div style="margin-left: 20px;" *ngIf="phoneInput.invalid && phoneInput.touched">
+        <small class="text-danger">Invalid phone number format.</small>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-between">
+      <button class="btn btn-success" (click)="onSubmit()">{{ isEditMode ? 'Update' : 'Create' }}</button>
+      <button class="btn btn-danger" (click)="closeForm()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- عرض الكونتاكت -->
+<table class="table table-bordered table-hover text-center mt-4 shadow-sm">
+  <thead class="table-dark">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of apiResponsePaginatedContact.data.data">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.phoneNumber }}</td>
+      <td>
+        <div class="d-flex justify-content-center gap-2">
+          <button class="btn btn-warning btn-sm" (click)="openUpdateForm(contact)">Edit</button>
+          <button class="btn btn-danger btn-sm" (click)="deleteContact(contact.id)">Delete</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Pagination -->
+<div class="pagination-controls text-center mt-5">
+  <button class="btn btn-light" (click)="goToPreviousPage()" [disabled]="currentPage === 1">⬅</button>
+  <span class="mx-3 fw-bold">Page {{ currentPage }}</span>
+  <button class="btn btn-light" (click)="goToNextPage()"
+    [disabled]="(currentPage * pageSize) >= totalContacts">➡</button>
+</div>
